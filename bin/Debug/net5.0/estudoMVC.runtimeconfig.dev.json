@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\leopr\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\leopr\\.nuget\\packages"
+    ]
+  }
+}

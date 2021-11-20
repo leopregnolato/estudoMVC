@@ -1,0 +1,28 @@
+@model estudoMVC.DTO.EnderecoDTO
+@{
+    Layout = "_LayoutAdmin";
+}
+<h3>Novo Endereço</h3>
+<hr/>
+<form class="form-horizontal" asp-controller="Endereco" asp-action="Salvar"  method="POST">
+    <input type="hidden" asp-for="Id" value="0">
+    <label asp-for="Logradouro">Tipo de Logradouro</label>
+    <input type="text" asp-for="Logradouro" class= "form-control" placeholder="Insira o tipo de Logradouro"><br>
+    <span asp-validation-for="Logradouro"></span>   
+    <label asp-for="NomeLogradouro">Nome do Logradouro</label>
+    <input type="text" asp-for="NomeLogradouro" class= "form-control" placeholder="Insira o nome de Logradouro">
+    <span asp-validation-for="NomeLogradouro"></span><br>
+    <label asp-for="Numero">Número</label>
+    <input type="text" asp-for="Numero" class= "form-control" placeholder="Insira o número da residência">
+    <span asp-validation-for="Numero"></span><br>
+    <label asp-for="Bairro">Bairro</label>
+    <input type="text" asp-for="Bairro" class= "form-control" placeholder="Insira o nome do Bairro">
+    <span asp-validation-for="Bairro"></span><br>
+    <label asp-for="Cidade">Cidade</label>
+    <input type="text" asp-for="Cidade" class= "form-control" placeholder="Insira o nome da Cidade">
+    <span asp-validation-for="Cidade"></span><br>
+    <label asp-for="Estado">Estado</label>
+    <input type="text" asp-for="Estado" class= "form-control" placeholder="Insira o nome do Estado">
+    <span asp-validation-for="Estado"></span><br>
+    <button class="btn btn-success">Cadastrar novo endereço</button>    
+</form>
