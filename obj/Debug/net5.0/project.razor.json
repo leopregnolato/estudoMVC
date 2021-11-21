@@ -15674,6 +15674,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\leopr\\Documents\\Workspace\\estudoMVC\\Views\\Rh\\EditarEndereco.cshtml",
+      "TargetPath": "Views\\Rh\\EditarEndereco.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\leopr\\Documents\\Workspace\\estudoMVC\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"

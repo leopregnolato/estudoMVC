@@ -1,0 +1,73 @@
+@model estudoMVC.DTO.EnderecoDTO
+@{
+    Layout = "_LayoutAdmin";
+}
+<h3>Novo Endereço</h3>
+<hr/>
+<form class="form-horizontal" asp-controller="Endereco" asp-action="Atualizar" method="POST">
+
+    <input type="hidden" asp-for="Id">
+    <br>
+    <label asp-for="Logradouro">Tipo de Logradouro</label>
+    <select asp-for="Logradouro" class="form-control" placeholder="Insira o tipo de Logradouro">
+        <option value="Rua">Rua</option>
+        <option value="Estrada">Estrada</option>
+        <option value="Alameda">Alameda</option>
+        <option value="Avenida">Avenida</option>
+        <option value="Viela">Viela</option>
+        <option value="Travessa">Travessa</option>
+        <option value="Rodovia">Rodovia</option>
+    </select>
+    <span asp-validation-for="Logradouro"></span><br>    
+    <br>
+    <label asp-for="NomeLogradouro">Nome do Logradouro</label>
+    <input type="text" asp-for="NomeLogradouro" class="form-control" placeholder="Insira o nome de Logradouro">
+    <span asp-validation-for="NomeLogradouro"></span><br>
+    <br>  
+    <label asp-for="Numero">Número</label>
+    <input type="number" asp-for="Numero" class="form-control" placeholder="Insira o número da residência">
+    <span asp-validation-for="Numero"></span><br>
+    <br>
+    <label asp-for="Bairro">Bairro</label>
+    <input type="text" asp-for="Bairro" class="form-control" placeholder="Insira o nome do Bairro">
+    <span asp-validation-for="Bairro"></span><br>
+    <br>
+    <label asp-for="Cidade">Cidade</label>
+    <input type="text" asp-for="Cidade" class="form-control" placeholder="Insira o nome da Cidade">
+    <span asp-validation-for="Cidade"></span><br>
+    <br>
+    <label asp-for="Estado">Estado</label>
+    <select asp-for="Estado" class="form-control" placeholder="Insira o nome do Estado">
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+        <option value="EX">Estrangeiro</option>
+    </select>
+    <span asp-validation-for="Estado"></span><br>
+    <br>
+    <button class="btn btn-success">Atualizar</button>    
+</form>

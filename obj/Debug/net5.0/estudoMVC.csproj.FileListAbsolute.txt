@@ -89,3 +89,4 @@ C:\Users\leopr\Documents\Workspace\estudoMVC\obj\Debug\net5.0\Razor\Views\Rh\End
 C:\Users\leopr\Documents\Workspace\estudoMVC\obj\Debug\net5.0\Razor\Views\Rh\Index.cshtml.g.cs
 C:\Users\leopr\Documents\Workspace\estudoMVC\obj\Debug\net5.0\Razor\Views\Rh\NovoEndereco.cshtml.g.cs
 C:\Users\leopr\Documents\Workspace\estudoMVC\obj\Debug\net5.0\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
+C:\Users\leopr\Documents\Workspace\estudoMVC\obj\Debug\net5.0\Razor\Views\Rh\EditarEndereco.cshtml.g.cs
