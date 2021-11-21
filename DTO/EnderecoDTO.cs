@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System;
+using Microsoft.AspNetCore.Identity;
 
 namespace estudoMVC.DTO
 {
@@ -7,17 +8,27 @@ namespace estudoMVC.DTO
     {   
         [Required]
         public int Id { get; set; }
-        [Required]
+
+        
+        [Required(ErrorMessage ="Este campo é obrigatório!")]
+        
         public string Logradouro { get; set; }
-        [Required]
+        
+        [Required(ErrorMessage ="Este campo é obrigatório!")]
+        
         public string NomeLogradouro { get; set; }
-        [Required]
+
+        [Required(ErrorMessage ="Este campo é obrigatório!")]           
         public int Numero { get; set; }
-        [Required]
+
+        [Required(ErrorMessage ="Este campo é obrigatório!")]              
         public string Bairro { get; set; }
-        [Required]
+
+        [Required(ErrorMessage ="Este campo é obrigatório!")]
+           
         public string Cidade { get; set; }
-        [Required]
+
+        [Required(ErrorMessage ="Este campo é obrigatório!")]         
         public string Estado { get; set; }
     }
 }

@@ -3,6 +3,7 @@ using estudoMVC.Data;
 using estudoMVC.DTO;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace estudoMVC.Controllers
 {
@@ -29,7 +30,7 @@ namespace estudoMVC.Controllers
                 database.SaveChanges();
                 return RedirectToAction("Endereco","Rh");
             }else{
-                return View(".../Rh/NovoEndereco");
+                return View("../Rh/NovoEndereco");
             }
         }
     }
