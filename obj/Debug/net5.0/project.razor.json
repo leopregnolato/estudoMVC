@@ -15644,6 +15644,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\leopr\\Documents\\Workspace\\estudoMVC\\Views\\Rh\\Cargo.cshtml",
+      "TargetPath": "Views\\Rh\\Cargo.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\leopr\\Documents\\Workspace\\estudoMVC\\Views\\Rh\\NovoEndereco.cshtml",
       "TargetPath": "Views\\Rh\\NovoEndereco.cshtml",
       "FileKind": "mvc"
@@ -15661,6 +15666,16 @@
     {
       "FilePath": "c:\\Users\\leopr\\Documents\\Workspace\\estudoMVC\\Views\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\leopr\\Documents\\Workspace\\estudoMVC\\Views\\Rh\\NovoCargo.cshtml",
+      "TargetPath": "Views\\Rh\\NovoCargo.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\leopr\\Documents\\Workspace\\estudoMVC\\Views\\Rh\\EditarCargo.cshtml",
+      "TargetPath": "Views\\Rh\\EditarCargo.cshtml",
       "FileKind": "mvc"
     },
     {

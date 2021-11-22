@@ -1,0 +1,23 @@
+@model estudoMVC.DTO.CargoDTO
+@{
+    Layout = "_LayoutAdmin";
+}
+<h3>Atualizar Cargo</h3>
+<hr/>
+
+<form class="form-horizontal" asp-controller="Cargo" asp-action="Atualizar" method="POST">
+
+    <input type="hidden" asp-for="Id">
+
+    <label asp-for="Nome">Nome do cargo</label>
+    <input type="text" asp-for="Nome" class="form-control" placeholder="Insira o nome do cargo">
+    <span asp-validation-for="Nome"></span><br>
+    <br>  
+
+    <label asp-for="Departamento">Departamento</label>
+    <input type="text" asp-for="Departamento" class="form-control" placeholder="Insira o nome do departamento">
+    <span asp-validation-for="Departamento"></span><br>
+    <br>
+    
+    <button class="btn btn-success">Atualizar</button>      
+</form>

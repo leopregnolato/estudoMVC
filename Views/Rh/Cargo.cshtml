@@ -1,0 +1,43 @@
+@model IEnumerable<estudoMVC.Models.Cargo>
+@{
+    Layout = "_LayoutAdmin";
+}
+<script>
+    $(document).ready( function () {
+        $('#cargos').DataTable();
+    } );
+</script>
+
+<h3>Cargos</h3>
+<hr/>
+<a  asp-controller="Rh" asp-action="NovoCargo" class="btn btn-success">Cadastrar novo Cargo</a><br>
+<hr/>
+
+<table id="cargos" class="table table-striped table borded">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Cargo</th>
+            <th>Departamento</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cargo in Model)
+        {
+            <tr> 
+                <th>@cargo.Id</th>
+                <th>@cargo.Nome</th>
+                <th>@cargo.Departamento</th>                
+                <td>
+                    <a href="/Rh/EditarCargo/@cargo.Id" class="btn btn-primary">Editar</a>
+
+                    <form asp-action="Deletar" asp-controller="Cargo" style="display:inline;">
+                        <input type="hidden" name="id" id="id" value="@cargo.Id">
+                        <button class="btn btn-danger">Deletar</button>
+                    </form>                    
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

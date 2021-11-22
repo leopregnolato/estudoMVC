@@ -90,3 +90,6 @@ C:\Users\leopr\Documents\Workspace\estudoMVC\obj\Debug\net5.0\Razor\Views\Rh\Ind
 C:\Users\leopr\Documents\Workspace\estudoMVC\obj\Debug\net5.0\Razor\Views\Rh\NovoEndereco.cshtml.g.cs
 C:\Users\leopr\Documents\Workspace\estudoMVC\obj\Debug\net5.0\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
 C:\Users\leopr\Documents\Workspace\estudoMVC\obj\Debug\net5.0\Razor\Views\Rh\EditarEndereco.cshtml.g.cs
+C:\Users\leopr\Documents\Workspace\estudoMVC\obj\Debug\net5.0\Razor\Views\Rh\Cargo.cshtml.g.cs
+C:\Users\leopr\Documents\Workspace\estudoMVC\obj\Debug\net5.0\Razor\Views\Rh\NovoCargo.cshtml.g.cs
+C:\Users\leopr\Documents\Workspace\estudoMVC\obj\Debug\net5.0\Razor\Views\Rh\EditarCargo.cshtml.g.cs

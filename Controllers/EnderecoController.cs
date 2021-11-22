@@ -48,7 +48,7 @@ namespace estudoMVC.Controllers
                 database.SaveChanges();
                 return RedirectToAction("Endereco","Rh");
             }else{
-                return View("../Rh/EditarCategoria");
+                return View("../Rh/EditarEndereco");
             }
         }
 

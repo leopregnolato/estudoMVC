@@ -39,5 +39,23 @@ namespace estudoMVC.Controllers
             enderecoView.Estado = endereco.Estado;
             return View(enderecoView);
         }
+
+        public IActionResult Cargo(){
+            var cargo = database.Cargos.Where(c => c.Status == true).ToList();
+            return View(cargo);
+        }
+
+        public IActionResult NovoCargo(){
+            return View();
+        }
+
+         public IActionResult EditarCargo(int id){
+            var cargo = database.Cargos.First(c => c.Id == id);
+            CargoDTO cargoView = new CargoDTO();
+            cargoView.Id = cargo.Id;
+            cargoView.Nome = cargo.Nome;
+            cargoView.Departamento = cargo.Departamento;
+            return View(cargoView);
+        }
     }
 }
