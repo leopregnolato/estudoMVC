@@ -11,7 +11,5 @@ namespace estudoMVC.Data
         public DbSet<Cargo> Cargos { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
-        {
-        }
     }
 }
